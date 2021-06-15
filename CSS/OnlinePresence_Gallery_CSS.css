@@ -118,8 +118,8 @@ body {
 
 header,
 main {
-	width: 50vw;
-	margin: 0 auto;
+	width: 70%;
+	margin: auto;
 }
 
 header {
@@ -131,7 +131,6 @@ header {
 #cards {
 	list-style: none;
 	outline: calc(var(--outline-width) * 10) solid blue;
-	
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: repeat(var(--numcards), var(--card-height));
@@ -144,7 +143,7 @@ header {
 
 .card__content {
 	box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
-	background: rgb(255, 255, 255);
+	background: #B7825F;
 	color: rgb(10, 5, 7);
 	border-radius: 1em;
 	overflow: hidden;
@@ -158,12 +157,12 @@ header {
 	outline: var(--outline-width) solid lime;
     margin-top:100px;
     height: 600px;
-    min-width:400px;
+    width:100%;
 }
 
 .card__content > div {
 	grid-area: text;
-	width: 80%;
+	width: 75%;
 	place-self: center;
 	text-align: left;
 	display: grid;
@@ -189,18 +188,17 @@ h1 {
 
 h2 {
 	font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-weight: 300;
 	font-size: 2.5em;
 }
 
 p {
-	font-family: monospace;
+	font-family: sans-serif;
 	font-weight: 300;
 	line-height: 1.42;
 }
 
 .btn {
-	background: rgb(188 87 36);
+	background: #242526;
 	color: rgb(255 255 255);
 	text-decoration: none;
 	display: inline-block;
