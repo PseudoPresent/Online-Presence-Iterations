@@ -1,15 +1,27 @@
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  height:auto;
+  width:98%;
+  margin:auto;
+}
+
+.flex-container > div {
+  width: 49%;
+  margin: 0px auto;
+  min-width:500px;
+}
 
 body{
     color:white;
 }
-h2{
-  color:#000;
+h1{
+  color:#B7825F;
   text-align:center;
   font-size:2em;
 }
 .warpper{
-  margin-top:30px;
-    display:flex;
+  display:flex;
   flex-direction:column;
   align-items:center;
 }
@@ -19,14 +31,14 @@ h2{
   margin:0 10px;;
   background:#B7825F;
   display:inline-block;
-  font: 20px 'Yanone Kaffeesatz', sans-serif;
+  font: 30px 'Yanone Kaffeesatz', sans-serif;
   font-weight:600;
 }
 .panels{
-  min-height:500px;
-  width:50%;
+  height:600px;
+  width:95%;
   border-top:3px solid black;
-  padding:20px;  
+  padding:20px;
 }
 .panel{
   display:none;
@@ -36,6 +48,7 @@ h2{
 .panel-title{
   font: 35px 'Yanone Kaffeesatz', sans-serif;
   font-weight:bold;
+  color:#B7825F;
 }
 .radio{
   display:none;
@@ -51,11 +64,7 @@ h2{
   background:black;
   border-top:black;
   color:white;
-  
 }
-
-
-
 
 a {
   color: white;
@@ -69,7 +78,7 @@ a {
 
 a:hover,
 a.selected {
-  color: black;
+  color: #B7825F;
 }
 
 li,
@@ -80,7 +89,6 @@ h5
   text-align: left;
   font: 35px 'Yanone Kaffeesatz', sans-serif;
   text-shadow: #000 1px 1px 2px;
-  margin-bottom: 5px;
 }
 
 .sociales {
@@ -89,12 +97,13 @@ h5
 }
 
 #timeline {
-  width: 800px;
+  width: auto;
   height: 350px;
   overflow: hidden;
   margin: auto;
+  padding:20px;
+  margin-top:30px;
   position: relative;
-  background: url('../images/dot.gif') left 45px repeat-x;
 }
 
 #dates {
@@ -110,7 +119,6 @@ h5
   height: 50px;
   font-size: 24px;
   text-align: center;
-  background: url('../images/biggerdot.png') center bottom no-repeat;
 }
 
 #dates a {
@@ -123,8 +131,8 @@ h5
 }
 
 #issues {
-  width: 800px;
-  height: 350px;
+  width: 90%;
+  height: auto;
   overflow: hidden;
 }
 
@@ -172,13 +180,13 @@ h5
   margin: 20px 0;
   text-shadow: #000 1px 1px 2px;
   text-align: left;
-  padding-left: 70px;
+  margin-right: 190px;
+  height:40px;
 }
 
 #issues li p {
   font-size: 14px;
-  margin-right: 70px;
-  margin-left: 70px;
+  margin-right: 190px;
   font-weight: normal;
   line-height: 22px;
   text-shadow: #000 1px 1px 2px;
