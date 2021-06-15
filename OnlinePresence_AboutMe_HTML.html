@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="CSS/OnlinePresence_Global_CSS.css">
+<link rel="stylesheet" href="CSS/OnlinePresence_AboutMe_CSS.css">
+<title>Home</title>
+<div id="NavBox">
+            <a id="NavText" href="OnlinePresence_Home_HTML.html">HOME</a>
+            <a id="NavText" style="font-weight:600" href="OnlinePresence_AboutMe_HTML.html">ABOUT ME</a>
+            <a id="NavText" href="OnlinePresence_Gallery_HTML.html">GALLERY</a>
+            <a id="NavText" href="OnlinePresence_References_HTML.html">REFERENCES</a>
+</div>
+
+<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="author" content="Made with ❤ by Jorge Epuñan - @csslab">
+
+  <title>jQuery Timeline 0.9.54 - Dando vida al tiempo</title>
+  <link rel="stylesheet" href="css/style.css" media="screen" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="js/jquery.timelinr-0.9.54.js"></script>
+  <script>
+    $(function(){
+    			$().timelinr({
+    				arrowKeys: 'true'
+    			})
+    		});
+  </script>
+<script src="OnlinePresence_AboutMe_Java.js"></script>
+</head>
+<body>
+<br><br><br>
+<h6 class="Head">ABOUT ME</h6>
+
+<div class="warpper">
+  <input class="radio" id="one" name="group" type="radio" checked>
+  <input class="radio" id="two" name="group" type="radio">
+  <input class="radio" id="three" name="group" type="radio">
+  <div class="tabs">
+  <label class="tab" id="one-tab" for="one">Skills & Talents</label>
+  <label class="tab" id="two-tab" for="two">Education</label>
+  <label class="tab" id="three-tab" for="three">Notable Achievements</label>
+    </div>
+  <div class="panels">
+  <div class="panel" id="one-panel">
+    
+    <div class="panel-title">Skills & Talents</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>  
+      
+  </div>
+  <div class="panel" id="two-panel">
+      
+    <div class="panel-title">Education</div>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+    
+    <div id="timeline">
+    <ul id="dates">
+      <li><a href="#ISH">ISH</a></li>
+      <li><a href="#AICS">AICS</a></li>
+      <li><a href="#ISU">ISU</a></li>
+      <li><a href="#Saxion">Saxion</a></li>
+
+    </ul>
+    <ul id="issues">
+      <li id="ISH">
+
+        <h1>International School of Helsinki</h1>
+        <h1 style="font-size:30px;">2006-2013</h1>
+        <p>Started the IB (International Baccalaureate) Program at International School of Helsinki, aged 5.</p>
+      </li>
+
+      <li id="AICS">
+
+        <h1 style="font-size:42px">Amsterdam International Community School</h1>
+        <h1 style="font-size:30px;">2013-2017</h1>
+        <p>Completed the IB Middle Years Programme (MYP) at the Amsterdam International Community School.</p>
+      </li>
+        
+      <li id="ISU">
+
+        <h1>International School of Utrecht</h1>
+        <h1 style="font-size:30px;">2017-2019</h1>
+        <p>Completed the IB Diploma Programme (DP) at the International School of Utrecht, with expertise in English, Spanish and Business Management.</p>
+      </li>
+        
+      <li id="Saxion">
+
+        <h1>Saxion University of Applied Sciences</h1>
+        <h1 style="font-size:30px;">2020 - Present</h1>
+        <p>Currently attending the Creative Media and Game Technologies (CMGT) Course at the Saxion University of Applied Sciences.</p>
+      </li>
+        
+    </ul>
+    <div id="grad_left"></div>
+    <div id="grad_right"></div>
+    <a href="#" id="next">+</a>
+    <a href="#" id="prev">-</a>
+  </div> 
+    
+  </div>
+  <div class="panel" id="three-panel">
+    <div class="panel-title">Notable Achievements</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+  </div>
+</div>
+</body>
+</html>
