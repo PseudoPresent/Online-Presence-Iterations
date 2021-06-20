@@ -56,5 +56,12 @@ span {
 }
 
 p{
-    font: 20px sans-serif;
+    font: 17px sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    #NavText{
+        font: 25px 'Yanone Kaffeesatz', sans-serif;
+        padding-right: 10px;
+    }
 }

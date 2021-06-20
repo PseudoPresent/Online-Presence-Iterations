@@ -12,12 +12,6 @@
 </div>
 
 <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="author" content="Made with ❤ by Jorge Epuñan - @csslab">
-
-  <title>jQuery Timeline 0.9.54 - Dando vida al tiempo</title>
-  <link rel="stylesheet" href="css/style.css" media="screen" />
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
   <script src="js/jquery.timelinr-0.9.54.js"></script>
   <script>
@@ -35,30 +29,106 @@
 
     
 <div class="flex-container">
-  <div>1</div>
+  <div>
+      
+      <p style="text-align: center; font: 50px 'Yanone Kaffeesatz', sans-serif;">( COOL IMAGE GOES HERE )</p>
+    
+  </div>
     <div>
     
     <div class="warpper">
   <input class="radio" id="one" name="group" type="radio" checked>
   <input class="radio" id="two" name="group" type="radio">
   <input class="radio" id="three" name="group" type="radio">
+  <input class="radio" id="four" name="group" type="radio">
   <div class="tabs">
-  <label class="tab" id="one-tab" for="one">Skills & Talents</label>
-  <label class="tab" id="two-tab" for="two">Education</label>
-  <label class="tab" id="three-tab" for="three">Notable Achievements</label>
+  <label class="tab" id="one-tab" for="one">Bio</label>
+  <label class="tab" id="two-tab" for="two">Skills & Talents</label>
+  <label class="tab" id="three-tab" for="three">Education</label>
+  <label class="tab" id="four-tab" for="four">Notable Achievements</label>
     </div>
   <div class="panels">
   <div class="panel" id="one-panel">
-    
-    <div class="panel-title">Skills & Talents</div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>  
+    <div class="panel-title">Bio</div>
+    <p>Hello! My name is Tal. I am currently 20 years old.</p>
+    <p>...</p>
+    <p>You expected more, right?</p>
+    <p>Well, from here on out, I am an open book.</p>
+    <p>I am here to answer your every question, fulfill your every need, and be the life of the party all at once. I am here to lead your team, take chances, and learn from mistakes. I am here to adapt, to immerse, to engage, to tell, to convey.</p>
+    <p>I am here to take a leap.</p>
+    <p>And, in considering me for your team, I hope you will too.</p>
       
+    <img src="Images/Signature.jpg" id="Signature">
+  </div>   
+        
+        
+  <div class="panel" id="two-panel">  
+    <div class="panel-title">Skills & Talents</div>
+    <p>As an individual, I strive to constantly push myself to my limits. I am detail-oriented, very committed to the things I love, and always eager to learn and contribute more. I have experience in leading teams, as well as working alone.</p>
+      
+    <p>Aside from that, I have proficiency in a few languages, and am actively learning multiple mediums of online programming through my University.</p>
+      
+    <p>Hover over the tabs below to find out more.</p>
+      
+    <div class="container">
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <h3>Virtues</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <ul id="List">
+                        <li><strong>Advocacy</strong></li>
+                        <li><strong>Creative Thinking</strong></li>
+                        <li><strong>Intuition</strong></li>
+                        <li><strong>Leadership</strong></li>
+                        <li><strong>Storytelling</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <h3>Specialties</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <ul id="List">
+                        <li><strong>GIMP/MS Paint</strong> (Fluent)</li>
+                        <li><strong>Microsoft Office</strong> (Fluent)</li>
+                        <li><strong>HTML/CSS</strong> (Learning)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <h3>Languages</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <ul id="List">
+                        <li><strong>Hebrew</strong> (Native)</li>
+                        <li><strong>English</strong> (Fluent)</li>
+                        <li><strong>Dutch</strong> (Fluent)</li>
+                        <li><strong>Spanish</strong> (Semi-Fluent)</li>
+                        <li><strong>Russian</strong> (Semi-Fluent)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> 
   </div>
-  <div class="panel" id="two-panel">
+
+  <div class="panel" id="three-panel">
       
     <div class="panel-title">Education</div>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
-    
     <div id="timeline">
     <ul id="dates">
       <li><a href="#ISH">ISH</a></li>
@@ -77,7 +147,7 @@
 
       <li id="AICS">
 
-        <h1 style="font-size:40px; color:#B7825F">Amsterdam International Community School</h1>
+        <h1 style="font-size:35px; color:#B7825F">Amsterdam International Community School</h1>
         <h1 style="font-size:30px; color:#B7825F">2013-2017</h1>
         <p>Completed the IB Middle Years Programme (MYP) at the Amsterdam International Community School.</p>
       </li>
@@ -99,21 +169,59 @@
     </ul>
     <div id="grad_left"></div>
     <div id="grad_right"></div>
-    <a href="#" id="next">+</a>
-    <a href="#" id="prev">-</a>
-  </div> 
-    
+    <a href="#" id="next">NEXT</a>
+    <a href="#" id="prev">PREV</a>
   </div>
-  <div class="panel" id="three-panel">
+<p>The International Baccalaureate system is a globally standardized Swiss education program, which offers full-length curriculums for all years worldwide. I joined the programme at age 5, and remained until my graduation in 2019. After a gap year, I joined the Saxion University of Applied Sciences, studying Creative Media and Game Technologies (CMGT).</p>
+  </div>
+  <div class="panel" id="four-panel">
     <div class="panel-title">Notable Achievements</div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div>
+    <table class="table">
+  <tr class="tableHead">
+    <th style="width:20%">Achievement</th>
+    <th>Description</th>
+    <th style="width:20%">Experience</th>
+  </tr>
+  <tr>
+    <td class="tableName"><strong>Model United Nations</strong></td>
+    <td>In December of 2019, I attended the Model United Nations in The Hague to advocate for a country, and use research to solve hypothetical world issues.</td>
+    <td>
+        <p><i>Planning</i></p>
+        <p><i>Research Skills</i></p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tableName"><strong>PERMAFROST</strong></td>
+    <td>One of my proudest creations is a game I designed called PERMAFROST. It follows the story of a folkloric viking hero, who must navigate through a growing blizzard, to destroy its source. <a href="https://flowlab.io/game/play/1551296" target="_blank"><i>Click here to view and play the game.</i></a></td>
+    <td>
+        <p><i>Game Design</i></p>
+        <p><i>Storytelling</i></p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tableName"><strong>Start-Of-Term Projects @ Saxion</strong></td>
+    <td>At the beginning of each quarter, my university hosts group projects that last upwards of two weeks, where a team of students from different disciplines come together to create a game. I often take on a leadership role in these projects, preparing presentations and helping with as much as I can. <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i>You can find the full list here.</i></a></td>
+    <td>
+        <p><i>Advocacy</i></p>
+        <p><i>Leadership</i></p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tableName"><strong>...That's It?</strong></td>
+    <td>This is just the start of my story. Being still in University, there is only so much I can boast about until now.</td>
+    <td>
+        <p><i>We'll See!</i></p>
+    </td>
+  </tr>  
+</table>
   </div>
 </div>
-    
+      </div>   
     </div>
 </div>
     
+    
+
     
     
 
