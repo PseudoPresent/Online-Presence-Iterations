@@ -1,24 +1,20 @@
 #RefLineup {
-  margin:0;
-  padding:0;
   background:#ccc;
-  font-family: 'Roboto Condensed', sans-serif;
-
+  
 }
 
 ul {
   position:absolute;
-  top:50%;
-  left:50%;
+  top:55%;
+  left:85%;
   transform:translate(-50%, -50%);
-  display:flex;
+  display:block;
   margin:0;
-  padding:0;
+  padding:40px;
 }
 
 ul li {
   list-style:none;
-  margin:0 5px;
 }
 
 ul li a .fa {
@@ -35,7 +31,7 @@ ul li a span {
   position:absolute;
   top: 30px;
   color: #262626;
-  letter-spacing: 4px;
+  letter-spacing: 8px;
   transition: .5s;
 }
 
@@ -47,7 +43,7 @@ ul li a {
   height:80px;
   background: #fff;
   text-align:left;
-  padding-left: 20px;
+  padding-left: 25px;
   transform: rotate(-30deg) skew(25deg) translate(0,0);
   transition:.5s;
   box-shadow: -20px 20px 10px rgba(0,0,0,.5);
@@ -156,4 +152,215 @@ ul li:hover:nth-child(7) a:before{
 }
 ul li:hover:nth-child(7) a:after{
   background: #12863b;
+}
+
+
+
+
+
+
+
+
+
+
+button {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, input, select, textarea {
+  color: white;
+  font-family:'Yanone Kaffeesatz', sans-serif;
+  margin: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+textarea {
+  overflow: auto;
+}
+
+#container {
+  border-top: solid 3px #B7825F;
+  border-bottom: solid 3px #B7825F;
+  width:65%;
+  margin-right: 25%;
+  margin-left:10%;
+  height:650px;
+  position: relative;
+}
+
+form {
+  padding: 37.5px;
+  margin: 50px 0;
+}
+
+h1 {
+  color: #B7825F;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  margin:40px;
+  margin-top:40px;
+}
+
+.email {
+	float: right;
+	width: 45%;
+}
+
+input[type='text'], [type='email'], select, textarea {
+	background: none;
+    border:none;
+	margin-top:5px;
+	color: #B7825F;
+	font-size: 1.500em;
+  font-weight: 600;
+  letter-spacing: 3px;
+	margin: 0.2em 0 1.875em 0;
+	padding: 0 0 0.875em 0;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+input[type='text']:focus, [type='email']:focus, textarea:focus {
+	outline: none;
+	padding: 0 0 0.875em 0;
+}
+
+.message {
+	float: none;
+    height:200px;
+}
+
+.name {
+	float: left;
+	width: 45%;
+}
+
+select {
+  background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png') no-repeat right;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.subject {
+  width: 100%;
+}
+
+.telephone {
+  width: 100%;
+}
+
+textarea {
+	line-height: 150%;
+	height: 150px;
+	resize: none;
+    width: 100%;
+}
+
+::-webkit-input-placeholder {
+    color: black;
+}
+
+:-moz-placeholder { 
+	color: #B7825F;
+	opacity: 1;
+}
+
+::-moz-placeholder {
+	color: #B7825F;
+	opacity: 1;
+}
+
+:-ms-input-placeholder {
+	color: #B7825F;
+}
+
+#form_button {
+  background: none;
+  border: solid 2px #B7825F;
+  color: #B7825F;
+  cursor: pointer;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+  outline: none;
+  padding: 20px 35px;
+  width:35%;
+  margin-right:0%;
+  margin-left:65%;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#form_button:hover {
+  background: #B7825F;
+  color: #F2F3EB;
+}
+
+@media screen and (max-width: 768px) {
+  #container {
+    margin: 20px auto;
+    margin-top:550px;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 26px;
+  }
+  
+  .underline {
+    width: 68px;
+  }
+  
+  #form_button {
+    padding: 15px 25px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: 18px;
+  }
+  
+  .icon {
+    height: 35px;
+    width: 35px;
+  }
+  
+  .underline {
+    width: 53px;
+  }
+  
+  input[type='text'], [type='email'], select, textarea {
+    font-size: 0.875em;
+  }
 }
