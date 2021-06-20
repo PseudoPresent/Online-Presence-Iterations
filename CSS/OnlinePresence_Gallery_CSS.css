@@ -155,14 +155,14 @@ header {
 
 	align-items: stretch;
 	outline: var(--outline-width) solid lime;
-    margin-top:100px;
-    height: 600px;
+    margin-top:70px;
+    height: 550px;
     width:100%;
 }
 
 .card__content > div {
 	grid-area: text;
-	width: 75%;
+	width: 80%;
 	place-self: center;
 	text-align: left;
 	display: grid;
