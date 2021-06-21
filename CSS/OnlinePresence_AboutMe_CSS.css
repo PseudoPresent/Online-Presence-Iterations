@@ -25,7 +25,7 @@
 }
 .tab{
   cursor: pointer;
-  padding:10px 30px;
+  padding:15px;
   display:inline-block;
   font: 25px 'Yanone Kaffeesatz', sans-serif;
   font-weight:600;
@@ -59,13 +59,15 @@
 #one:checked ~ .panels #one-panel,
 #two:checked ~ .panels #two-panel,
 #three:checked ~ .panels #three-panel,
-#four:checked ~ .panels #four-panel{
+#four:checked ~ .panels #four-panel,
+#five:checked ~ .panels #five-panel{
   display:block;
 }
 #one:checked ~ .tabs #one-tab,
 #two:checked ~ .tabs #two-tab,
 #three:checked ~ .tabs #three-tab,
-#four:checked ~ .tabs #four-tab{
+#four:checked ~ .tabs #four-tab,
+#five:checked ~ .tabs #five-tab{
   background:h1{
   color:black;
   text-align:center;
@@ -352,14 +354,34 @@ td, th{
     padding:8px;
 }
 
-td{
+.table, td{
     border-top: 3px solid #B7825F;
     font-size:17px;
 }
 
 #Signature{
-    width:300px;
+    height:220px;
     float:right;
+}
+
+.personalTable{
+    background: #242526;
+}
+
+.personalTable, tr{
+    color:white;
+    border-bottom: 3px solid #B7825F;
+    border-left: 3px solid #B7825F;
+    border-right: 3px solid #B7825F;
+    text-align:left;
+    vertical-align: top;
+    width:100%
+}
+
+.personalTable, td > p{
+    margin-top: 5px;
+    font: 18px sans-serif;
+    line-height: 30px;
 }
 
 @media screen and (max-width: 768px) {
