@@ -34,9 +34,6 @@
 .card {
 	position: sticky;
 	top: 0;
-	padding-top: calc(var(--index) * var(--card-top-offset));
-    padding-top: 50px;
-    margin-top: 50px;
 }
 
 @supports (animation-timeline: works) {
@@ -51,7 +48,7 @@
 		;
 		start: selector(#cards) start 1; /* Start when the start edge touches the top of the scrollport */
 		end: selector(#cards) start 0; /* End when the start edge touches the start of the scrollport */
-		time-range: 4s;
+		time-range: 5s;
 	}
 
 	.card {
@@ -63,7 +60,6 @@
 	.card__content {
 		transform-origin: 50% 0%;
 		will-change: transform;
-
 		--duration: calc(var(--reverse-index0) * 1s);
 		--delay: calc(var(--index0) * 1s);
 
@@ -113,28 +109,29 @@
 body {
 	color: rgb(255, 255, 255);
 	text-align: center;
-	font-size: calc(1em + 0.5vw);
 }
 
 header,
 main {
-	width: 70%;
-	margin: auto;
+	width: 90%;
+    margin:auto;
 }
 
 header {
-	height: 100vh;
+	height: 240px;
 	display: grid;
 	place-items: center;
 }
 
 #cards {
+    width: 75%;
+    margin:20px auto;
 	list-style: none;
 	outline: calc(var(--outline-width) * 10) solid blue;
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: repeat(var(--numcards), var(--card-height));
-	gap: var(--card-margin);
+    
 }
 
 .card {
@@ -155,8 +152,8 @@ header {
 
 	align-items: stretch;
 	outline: var(--outline-width) solid lime;
-    margin-top:70px;
-    height: 550px;
+    margin-top:50px;
+    height: 500px;
     width:100%;
 }
 

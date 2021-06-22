@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+body{
+    overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+    background: #3a3b3c;
+    padding: 0;
+    margin: 0;
+}
+
+
+#NavBox {
+    position:absolute;
+    top:90%;
+    z-index: 5;
+    text-align:center;
+    width:100%;
+    padding:8px;
+}
+
+#NavText {
+    font: 45px 'Yanone Kaffeesatz', sans-serif;
+    text-decoration: none;
+    padding-left:15px;
+    padding-right:45px;
+    color: #B7825F;
+    animation: fadein .8s;
+}
+
+#NavText:hover {
+    font-weight:600;
+}
+
+.Head {
+    font: 40px 'Yanone Kaffeesatz', sans-serif;
+    color:#B7825F;
+    font-weight: 800;
+    text-align: center;
+    margin:20px auto;
+    margin-top:20px;
+}
+
+.SubHead {
+    font: 25px 'Yanone Kaffeesatz', sans-serif;
+    color:#B7825F;
+    font-weight: 400;
+    text-align: center;
+    margin:10px auto;
+}
+
+.flex-container {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 500px;
+}
+
+.flex-container > .PIC {
+  display:block;
+  width: 70%;
+  margin: 0px auto;
+}
+
+.flex-container > .TEXT {
+  display:flex;
+  width: 40%;
+  margin: 0px auto;
+  height:auto;
+}
+
+.TEXT p, a{
+  color:#B7825F;
+  position:static;
+  font: 25px 'Yanone Kaffeesatz', sans-serif;
+  padding:66% 0;
+  text-decoration: none;
+}
+
+#Profile{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .flex-container{
+        display:block;
+        width:95%;
+    }
+    
+    .flex-container > .PIC{
+        margin-left: auto;
+        margin-right: auto;
+        width:70%;
+        max-width:350px;
+    }
+    
+    .flex-container > .TEXT{
+        display:block;
+        width:80%;
+        height:50px;
+        text-align:center;
+    }
+    
+    .TEXT p{
+        font-size: 17px;
+        padding:0;
+    }
+    
+    #NavBox {
+        bottom:5px;
+}
+    
+    #NavText{
+        font: 25px 'Yanone Kaffeesatz', sans-serif;
+        padding-right: 10px;
+    }
+}

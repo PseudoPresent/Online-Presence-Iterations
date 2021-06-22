@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+
 @keyframes fadein {
     from {
         opacity:0;
@@ -9,12 +11,10 @@
     }
 }
 
-
-
 body{
+    background: #3a3b3c;
     padding: 0;
     margin: 0;
-    background-color: #3a3b3c;
 }
 
 
@@ -25,11 +25,11 @@ body{
     position:fixed;
     text-align:left;
     width:100%;
-    padding:12px;
+    padding:8px;
 }
 
 #NavText {
-    font: 35px 'Yanone Kaffeesatz', sans-serif;
+    font: 45px 'Yanone Kaffeesatz', sans-serif;
     text-decoration: none;
     padding-left:15px;
     padding-right:45px;
@@ -42,12 +42,12 @@ body{
 }
 
 .Head {
-    font: 50px 'Yanone Kaffeesatz', sans-serif;
+    font: 40px 'Yanone Kaffeesatz', sans-serif;
     color:#B7825F;
     font-weight: 800;
     text-align: center;
-    margin:10px auto;
-    margin-top:30px;
+    margin:20px auto;
+    margin-top:20px;
 }
 
 span {
