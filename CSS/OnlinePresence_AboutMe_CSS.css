@@ -6,22 +6,30 @@
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  height:auto;
   width:98%;
   margin:auto;
   margin-top:20px;
+  height:auto;
 }
 
 .flex-container > div {
   width: 49%;
-  margin:  auto;
-  min-width:500px;
+  margin: 0px auto;
+  height:auto;
+}
+
+#Prof{
+    width:80%;
+    margin-right:10%;
+    margin-left:10%;
 }
 
 .warpper{
+  background:#3a3b3c;
   display:flex;
   flex-direction:column;
   align-items:center;
+  height:auto;
 }
 .tab{
   cursor: pointer;
@@ -385,12 +393,19 @@ td, th{
 }
 
 @media screen and (max-width: 768px) {
+    #Prof{
+    width:96%;
+    margin-right:2%;
+    margin-left:2%;
+}
+    
     .tab{
         font: 25px 'Yanone Kaffeesatz', sans-serif;
         padding:5px;
     }
     
     .panels{
+        border-top:3px solid #B7825F;
         height:630px;
         margin-bottom:20px;
     }
